@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express()
+const PORT = process.env.PORT
 
 app.use(express.json())
 
@@ -38,7 +39,7 @@ app.delete("/delete",(req,res) => {
 
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log("server is on guys");
     
 })
